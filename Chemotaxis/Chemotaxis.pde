@@ -22,8 +22,8 @@ for (int i = 0; i < BacteriaBlob.length; i++){
  	//move and show the bacteria   
  }  
  class Bacteria {     
- float x_pos;
- float y_pos;
+ int  x_pos;
+ int  y_pos;
  int rColor = (int)(Math.random() * 254) + 1;
  int gColor = (int)(Math.random() * 254) + 1;
  int bColor = (int)(Math.random() * 254) + 1;
