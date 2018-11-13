@@ -27,7 +27,7 @@ for (int i = 0; i < BacteriaBlob.length; i++){
  int rColor = (int)(Math.random() * 254) + 1;
  int gColor = (int)(Math.random() * 254) + 1;
  int bColor = (int)(Math.random() * 254) + 1;
- float easing =.05;
+ float delay =.05;
    
    Bacteria(int x, int y){
 
@@ -39,11 +39,11 @@ for (int i = 0; i < BacteriaBlob.length; i++){
      if(mousePressed == false){
     float targetX = mouseX;
     float dx = targetX - x_pos;
-    x_pos+= dx * easing;
+    x_pos+= dx * delay;
     
     float targetY = mouseY;
     float dy = targetY - y_pos;
-    y_pos+= dy * easing;
+    y_pos+= dy * delay;
     
     x_pos = x_pos + (int)(Math.random() * 10)-10;
     y_pos = y_pos + (int)(Math.random() * 10)-10;
@@ -51,11 +51,11 @@ for (int i = 0; i < BacteriaBlob.length; i++){
      } else { 
        float targetX = mouseX;
     float dx = targetX + x_pos;
-    x_pos+= dx * easing;
+    x_pos+= dx * delay;
     
     float targetY = mouseY;
     float dy = targetY + y_pos;
-    y_pos+= dy * easing;
+    y_pos+= dy * delay;
     
     x_pos = x_pos + (int)(Math.random() * 10)-10;
     y_pos = y_pos + (int)(Math.random() * 10)-10;
